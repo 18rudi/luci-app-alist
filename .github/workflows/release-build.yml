@@ -103,8 +103,8 @@ jobs:
       - name: Upload packages
         uses: ncipollo/release-action@v1
         with:
-          name: ${{ github.ref_name }
-          token: ${{ secrets.workflow_token }}
+          name: ${{ github.ref_name }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           allowUpdates: true
           replacesArtifacts: true
           artifacts: "${{ matrix.sdk }}-${{ matrix.arch }}.tar.gz"
