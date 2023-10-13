@@ -1,9 +1,5 @@
-name: Build
+name: Build X
 
-on:
-  push:
-    tags:
-      - v3.**
 
 jobs:
   build:
